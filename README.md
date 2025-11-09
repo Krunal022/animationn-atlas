@@ -6,7 +6,7 @@ Each project is standalone — open locally or check live demos.
 **Continuation of [Animation Atlas (01–10)](https://github.com/Krunal022/animation-atlas.git)**
 
 
-# 🔗 Live Demos (11–20)
+## 🔗 Live Demos (11–20)
 
 | Demo             | Preview                                         |
 | ---------------- | ----------------------------------------------- |
