@@ -10,8 +10,8 @@ Each project is standalone — open locally or check live demos.
 
 | Demo             | Preview                                         |
 | ---------------- | ----------------------------------------------- |
-| 11 — morphSVG Magic | [Live]() |
-| 12 — Drag Magic | [Live]() |
+| 11 — morphSVG Magic | [Live](https://11-morphsvg-magic.vercel.app/) |
+| 12 — Drag Magic | [Live](https://12-dragme-magic.vercel.app/) |
 
 
 ## 📂 Projects
