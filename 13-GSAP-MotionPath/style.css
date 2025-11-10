@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: white;
+    background: #1F282E;
+    /* change if you need a different page bg */
+    font-family: system-ui, Arial, sans-serif;
+}
+
+/* Container for layout (optional) */
+.page {
+    position: relative;
+    min-height: 300vh;
+    overflow: hidden;
+}
+
+/* SVG outer wrapper that mirrors your Tailwind layout */
+.decor-svg {
+    position: absolute;
+    pointer-events: none;
+    top: 12.5vw;
+    /* small-screen top equivalent */
+    right: 2.1vw;
+    width: 90.5vw;
+    /* height is set by the SVG's own height attribute, keep visible overflow */
+    overflow: visible;
+    filter: blur(0.25px);
+    /* subtle blur similar to blur-xs */
+    mix-blend-mode: normal;
+    /* use normal so black appears as expected */
+    z-index: 1;
+}
+
+/* larger-screen tweaks like your lg: and xl: sizes */
+@media (min-width: 1024px) {
+    .decor-svg {
+        top: 9.5vw;
+        height: 121.1vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    .decor-svg {
+        height: 118vw;
+    }
+}
+
+/* hide on small screens (max-sm:hidden equivalent) */
+@media (max-width: 640px) {
+    .decor-svg {
+        display: none;
+    }
+}
+
+/* Path styling — black dashed stroke */
+.decor-path {
+    fill: none;
+    /* no fill */
+    stroke: #000000;
+    filter: blur(4.5px);
+    /* black stroke */
+    stroke-width: 5;
+    /* same as your original */
+    stroke-dasharray: 50 50;
+    /* dashed pattern */
+    stroke-linecap: round;
+    /* nicer caps */
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    /* keep stroke width consistent when scaled */
+}
+
+/* Plane styling */
+.plane {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.first-row {
+    display: flex;
+    gap: 6rem;
+    height: 100%;
+    width: 100%;
+}
+
+.first-row .first {
+    width: 37%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1762112800005-a61bacb1d15c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=686);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.first-row .second {
+    width: 60%;
+    flex: 1;
+    margin-top: 5rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    height: 80vh;
+    background-position: center 40%;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1762170905134-e9e3b5692286?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880);
+}
+
+span {
+    color: #38DCF9;
+}
+
+h1 {
+    font-family: Kunstler Script;
+}
+
+.second-row {
+    align-content: end;
+    gap: 6rem;
+    border-radius: 3rem;
+    height: 100vh;
+    margin-left: 15rem;
+    width: 80%;
+    margin-top: 5rem;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1760308379581-60da1abc154e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170);
+}
+
+.mobile .mobile-message {
+    width: 100%;
+    display: none;
+}
+
+@media (max-width:1299px) {
+    body {
+        overflow: hidden;
+        position: relative;
+        padding: 0 1rem;
+    }
+
+    .page {
+        display: none;
+    }
+
+
+    main {
+        display: none;
+    }
+
+    .mobile {
+        background-color: green;
+    }
+
+    .mobile .mobile-message {
+        margin-top: 0;
+        font-family: "Sue Ellen Francisco", cursive;
+        line-height: 4rem;
+        font-weight: 100;
+        text-align: center;
+        font-size: 3vw;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        z-index: 888;
+        display: block;
+    }
+
+    h6 {
+        font-weight: 200;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+    }
+
+}
