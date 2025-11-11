@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5.5rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(a.jpg);
+}
+
+svg {
+    /* color: red; */
+    /* fill: red; */
+    /* background-color: red; */
+    scale: 2;
+}
+
+@media (max-width:600px) {
+    svg {
+        scale: 1;
+    }
+}
+
+@media (min-width:800px) {
+    svg {
+        scale: 1.2;
+    }
+}
