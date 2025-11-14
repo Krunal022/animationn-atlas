@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // gsap code here!
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1300px)", () => {
+    mm.add("(min-width: 1200px)", () => {
         // desktop setup code here...
         let tl = gsap.timeline({
             scrollTrigger: ({

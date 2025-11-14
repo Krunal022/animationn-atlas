@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
 
 html,
@@ -93,7 +94,7 @@ body {
 
 .first-row .first {
     width: 37%;
-    height: 80vh;
+    height: 36vmax;
     background-position: center;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1762112800005-a61bacb1d15c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=686);
@@ -104,10 +105,10 @@ body {
 .first-row .second {
     width: 60%;
     flex: 1;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     cursor: pointer;
     border-radius: 3rem;
-    height: 80vh;
+    height: 38vmax;
     background-position: center 40%;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1762170905134-e9e3b5692286?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880);
@@ -118,17 +119,17 @@ span {
 }
 
 h1 {
-    font-family: Kunstler Script;
+    font-family: "Pinyon Script", cursive;
 }
 
 .second-row {
     align-content: end;
     gap: 6rem;
     border-radius: 3rem;
-    height: 100vh;
+    height: 50vmax;
     margin-left: 15rem;
     width: 80%;
-    margin-top: 5rem;
+    margin-top: 4rem;
     cursor: pointer;
     background-position: center;
     background-size: cover;
@@ -140,7 +141,28 @@ h1 {
     display: none;
 }
 
-@media (max-width:1299px) {
+@media (min-width:1200px) {
+    .first-row .first {
+        height: 32vmax;
+    }
+
+    .first-row .second {
+        margin-top: 0;
+        height: 38vmax;
+    }
+}
+@media (min-width:1300px) {
+    .first-row .first {
+        height: 36vmax;
+    }
+
+    .first-row .second {
+        margin-top: 4.5rem;
+        height: 38vmax;
+    }
+}
+
+@media (max-width: 1200px) {
     body {
         overflow: hidden;
         position: relative;
